@@ -4,7 +4,7 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-console.log('dsfsf');
+console.log('we are in dev branch');
 
 
 export default MyApp
