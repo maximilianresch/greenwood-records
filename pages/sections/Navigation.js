@@ -5,15 +5,19 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
 export default function Navigation() {
-
   return (
-    <div>
+    //make it sticky, links, progress
+    <div className="navbar">
       <AppBar position="static">
-        <Toolbar variant="dense" className="flexboxgrid" style={{display: "flex", justifyContent:"space-between"}}>
+        <Toolbar
+          variant="dense"
+          className="flexboxgrid"
+          style={{ display: "flex", justifyContent: "space-between" }}
+        >
           <Typography variant="h5" color="inherit">
             greenwoodrecords
           </Typography>
-          <Typography variant="h6" color="inherit" style={{  }}>
+          <Typography variant="h6" color="inherit" style={{}}>
             Studio
           </Typography>
           <Typography variant="h6" color="inherit">
@@ -33,3 +37,5 @@ export default function Navigation() {
     </div>
   );
 }
+
+

@@ -1,8 +1,12 @@
 import React from "react";
+import {
+  Card, Button, CardImg, CardTitle, CardText, CardGroup,
+  CardSubtitle, CardBody
+} from 'reactstrap';
 
 export default function Studio() {
   return (
-    <div style={{ padding: 10, paddingTop: 20 }}>
+    <div style={{paddingTop: 50 }}>
       <h2>Studio</h2>
       <br />
       <p>
@@ -16,7 +20,39 @@ export default function Studio() {
         welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie
         "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.
       </p>
-      <div></div>
+      <div>
+      <CardGroup>
+      <Card>
+        <CardImg top width="100%" src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Room 1</CardTitle>
+          <CardSubtitle>10m2</CardSubtitle>
+          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+          <Button>See more</Button>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Room 2</CardTitle>
+          <CardSubtitle>20m2</CardSubtitle>
+          <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
+          <Button>See more</Button>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Room 3</CardTitle>
+          <CardSubtitle>30m2</CardSubtitle>
+          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+          <Button>See more</Button>
+        </CardBody>
+      </Card>
+    </CardGroup>
+      </div>
     </div>
   );
 }
+
+// needs better styling -> cards padding between -> font, colors and breaks (line)
