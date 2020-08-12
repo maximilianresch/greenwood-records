@@ -1,10 +1,16 @@
-import '../styles/globals.css'
+
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
-console.log('we are in dev branch');
 
-
-export default MyApp
+export default MyApp;
