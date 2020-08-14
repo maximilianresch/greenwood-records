@@ -1,8 +1,8 @@
 import Home from './sections/Home';
 import Navigation from '../pages/sections/Navigation/Navigation';
-import Studio from './sections/Studio';
+import Studio from './sections/Studio/Studio';
 import Head from 'next/head';
-import Equipment from './sections/Equipment';
+import Equipment from './sections/Equipment/Equipment';
 import Footer from './sections/Footer'
 
 export default function App() {

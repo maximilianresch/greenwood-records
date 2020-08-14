@@ -13,7 +13,7 @@ export default function Navigation() {
         <Toolbar
           variant="dense"
           className="flexboxgrid"
-          style={{ display: "flex", justifyContent: "space-between" }}
+          style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", paddingTop: 5 }}
         >
           <Link href="/"><Typography variant="h5" color="inherit" href="/">
             <a>greenwoodrecords</a>
