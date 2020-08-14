@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Equipment.module.css";
+import img from '../../../public/undraw_compose_music_ovo2.png';
 
 export default function Equipment() {
   return (
@@ -8,6 +9,10 @@ export default function Equipment() {
       <h2 className={styles.separator} style={{ paddingTop: 50 }}>
         Equipment
       </h2>
+      <br />
+
+      <img src={img} alt='' className={styles.img} />
+
       <br />
       <p>
         Lorem Ipsum ist ein einfacher Demo-Text für die Print- und

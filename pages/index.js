@@ -1,4 +1,4 @@
-import Home from './sections/Home';
+import Home from './sections/Home/Home';
 import Navigation from '../pages/sections/Navigation/Navigation';
 import Studio from './sections/Studio/Studio';
 import Head from 'next/head';
