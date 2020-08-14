@@ -14,3 +14,33 @@
 .separator::after {
     margin-left: .25em;
 }
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    
+}
+
+.card1 {
+    border-radius: 20px;
+    background-color: #d49520;
+    
+}
+
+.card2 {
+    border-radius: 20px;
+    background-color: #d49520;
+}
+
+.card3 {
+    border-radius: 20px;
+    background-color: #d49520;
+}
+
+.img {
+    border-radius: 20px;
+}
+
+
+

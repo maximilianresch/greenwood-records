@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    padding-top: 30px;
 }
 .separator::before, .separator::after {
     content: '';
@@ -15,7 +16,3 @@
     margin-left: .25em;
 }
 
-.equipmentList {
-    display: flex;
-    justify-content: space-around;
-}

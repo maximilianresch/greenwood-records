@@ -5,21 +5,21 @@ import {
   CardImg,
   CardTitle,
   CardText,
-  CardGroup,
+  CardDeck,
   CardSubtitle,
   CardBody,
 } from "reactstrap";
-import styles from './Studio.module.css';
+import styles from "./Studio.module.css";
 
 export default function Studio() {
   return (
     <div style={{ paddingTop: 50 }}>
       <div className={styles.separator}>
-      <span>
-        <h2>Studio</h2>
+        <span>
+          <h2>Studio</h2>
         </span>
       </div>
-      
+
       <br />
       <p>
         Lorem Ipsum ist ein einfacher Demo-Text für die Print- und
@@ -32,10 +32,11 @@ export default function Studio() {
         welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie
         "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.
       </p>
-      <div>
-        <CardGroup>
-          <Card>
+      <div className={styles.cards}>
+        <CardDeck>
+          <Card className={styles.card1}>
             <CardImg
+              className={styles.img}
               top
               width="100%"
               src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
@@ -52,8 +53,9 @@ export default function Studio() {
               <Button>See more</Button>
             </CardBody>
           </Card>
-          <Card>
+          <Card className={styles.card2}>
             <CardImg
+              className={styles.img}
               top
               width="100%"
               src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
@@ -69,8 +71,9 @@ export default function Studio() {
               <Button>See more</Button>
             </CardBody>
           </Card>
-          <Card>
+          <Card className={styles.card3}>
             <CardImg
+              className={styles.img}
               top
               width="100%"
               src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
@@ -87,11 +90,10 @@ export default function Studio() {
               <Button>See more</Button>
             </CardBody>
           </Card>
-        </CardGroup>
+        </CardDeck>
       </div>
     </div>
   );
 }
-
 
 // needs better styling -> cards padding between -> font, colors and breaks (line)

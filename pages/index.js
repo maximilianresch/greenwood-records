@@ -4,6 +4,7 @@ import Studio from './sections/Studio/Studio';
 import Head from 'next/head';
 import Equipment from './sections/Equipment/Equipment';
 import Footer from './sections/Footer'
+import Services from './sections/Services/Services';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <h4 style={{textAlign: "center", paddingTop: 30}}>Kleiner text -> Kurze Beschreibung</h4>
       <Studio />
       <Equipment />
+      <Services />
       <Footer />
     </div>
   )

@@ -1,13 +1,13 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  justify-items: baseline;
+  background-color: #23a147;
+}
+
+.sticky {
   position: sticky;
   width: 100%;
   top: 0;
-  left: 0;
   z-index: 1;
-}
-
-.content {
-  display: "flex";
-  justify-content: "space-between";
-  align-items: "baseline";
 }
