@@ -4,21 +4,20 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Circular Std', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,
+    sans-serif;
   background-color: #e7e7e7;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
-
 
 
 @media only screen and (max-width: 320px) {
-
-  body { 
-     font-size: 2em; 
+  body {
+    font-size: 2em;
   }
-
 }
 
-
- /* add @media for all devices */
-
+/* add @media for all devices */

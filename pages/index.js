@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Equipment from './sections/Equipment/Equipment';
 import Footer from './sections/Footer'
 import Services from './sections/Services/Services';
+import BackToTop from '../components/backToTop';
 
 export default function App() {
   return (
@@ -23,8 +24,10 @@ export default function App() {
       <Equipment />
       <Services />
       <Footer />
+      <BackToTop />
     </div>
   )
 }
 
 // next big step to make it responsive
+

@@ -3,11 +3,28 @@
   justify-content: space-between;
   justify-items: baseline;
   background-color: #23a147;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
 
 .sticky {
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 1;
+}
+
+.navContent {
+  transform: translate(-50%, 50%);
+  white-space: nowrap;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #383e42;
+}
+
+.navContent:hover {
+  color: blanchedalmond;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
 }
