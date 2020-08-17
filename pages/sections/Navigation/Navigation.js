@@ -52,7 +52,7 @@ export default function Navigation() {
     //make it sticky, links, progress
     <div className={styles.sticky}>
       <AppBar position="static" className={styles.slider}>
-        <Toolbar className={styles.navbar}>
+        <Toolbar variant="dense" className={styles.navbar}>
           {!isDesktop && !open && (
             <IconButton
               color="inherit"
