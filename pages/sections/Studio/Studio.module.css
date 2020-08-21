@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    text-transform: uppercase;
 }
 .separator::before, .separator::after {
     content: '';
@@ -16,27 +17,24 @@
 }
 
 
-.card1 {
+.card {
     border-radius: 20px;
-    background-color: #d49520;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+    border: none;
+    color: rgb(34, 34, 34);
 }
 
-.card2 {
-    border-radius: 20px;
-    background-color: #d49520;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card3 {
-    border-radius: 20px;
-    background-color: #d49520;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .img {
     border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button {
+    background-color: #ac4034;
+    border: none;
 }
 
 

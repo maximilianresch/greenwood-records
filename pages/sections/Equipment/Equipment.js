@@ -10,9 +10,9 @@ export default function Equipment() {
         Equipment
       </h2>
       <br />
-
+    <div className={styles.imgAlign}>
       <img src={img} alt='' className={styles.img} />
-
+</div>
       <br />
       <p>
         Lorem Ipsum ist ein einfacher Demo-Text für die Print- und

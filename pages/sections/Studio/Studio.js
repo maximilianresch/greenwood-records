@@ -34,7 +34,7 @@ export default function Studio() {
       </p>
       <div className={styles.cards}>
         <CardDeck>
-          <Card className={styles.card1}>
+          <Card className={styles.card}>
             <CardImg
               className={styles.img}
               top
@@ -50,10 +50,10 @@ export default function Studio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </CardText>
-              <Button>See more</Button>
+              <Button className={styles.button}>See more</Button>
             </CardBody>
           </Card>
-          <Card className={styles.card2}>
+          <Card className={styles.card}>
             <CardImg
               className={styles.img}
               top
@@ -68,10 +68,10 @@ export default function Studio() {
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </CardText>
-              <Button>See more</Button>
+              <Button className={styles.button}>See more</Button>
             </CardBody>
           </Card>
-          <Card className={styles.card3}>
+          <Card className={styles.card}>
             <CardImg
               className={styles.img}
               top
@@ -87,7 +87,7 @@ export default function Studio() {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button>See more</Button>
+              <Button className={styles.button}>See more</Button>
             </CardBody>
           </Card>
         </CardDeck>

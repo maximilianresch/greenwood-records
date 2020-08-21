@@ -26,7 +26,7 @@ export default function Services() {
 
       <Row className={styles.card}>
         <Col sm="6">
-          <Tilt options={{ max: 20 }}>
+          <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
               <CardTitle>Inklusive Techniker</CardTitle>
               <CardText>
@@ -36,13 +36,13 @@ export default function Services() {
                   sed arcu non odio euismod lacinia
                 </p>
               </CardText>
-              <Button>Get started</Button>
+              <Button className={styles.button}>Get started</Button>
             </Card>
           </Tilt>
         </Col>
-
+        <br/>
         <Col sm="6">
-          <Tilt options={{ max: 20 }}>
+          <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
               <CardTitle>Ohne Techniker</CardTitle>
               <CardText>
@@ -52,7 +52,7 @@ export default function Services() {
                   sed arcu non odio euismod lacinia
                 </p>
               </CardText>
-              <Button>Jetzt Aufnehmen</Button>
+              <Button className={styles.button}>Jetzt Aufnehmen</Button>
             </Card>
           </Tilt>
         </Col>

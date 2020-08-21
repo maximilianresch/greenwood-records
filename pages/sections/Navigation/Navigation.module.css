@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   justify-items: baseline;
-  background-color: #23a147;
+  background-color: #293133;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -21,7 +21,7 @@
   transition: all 0.5s;
   cursor: pointer;
   text-decoration: none;
-  color: #383e42;
+  color: #ffffff;
 }
 
 .navContent:hover {

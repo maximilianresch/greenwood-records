@@ -27,7 +27,6 @@ export default function Footer() {
           <div> f.hainzl@gwr.at</div>
           <div> +43 699 17007298 </div>
           <div>
-            
             <FacebookIcon />
             <InstagramIcon />
             <YouTubeIcon />
