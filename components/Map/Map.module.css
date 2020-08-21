@@ -16,14 +16,20 @@
     align-items: center;
     width: 180px;
     color: var(--main-blue);
+    transform: none;
   }
   
   .pinIcon {
     font-size: 4rem;
+    transform: translate(-50%, -50%);
   }
   
   .pinText {
     font-size: 1.3em;
+    font-weight: bold;
+    color: #ac4034;
+    border: solid;
+    background-color: aliceblue; 
   }
   
   @media screen and (min-width: 799px) {

@@ -12,7 +12,8 @@ import MapSection from "../components/Map/Map";
 import styles from "./index.module.css";
 
 const location = {
-  adress: "Gföhler Straße 34, 3552 Lengenfeld",
+  
+  adress: "greenwoodrecords",
   lat: 48.472892,
   lng: 15.586909,
 };

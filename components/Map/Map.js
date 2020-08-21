@@ -1,7 +1,8 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import styles from "./Map.module.css";
-import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined';
+import LocationPin from "./LocationPin";
+
 
 const Map = ({ location, zoomLevel }) => (
   <div className={styles.map}>
@@ -13,10 +14,11 @@ const Map = ({ location, zoomLevel }) => (
         defaultCenter={location}
         defaultZoom={12}
       >
-        <MusicNoteOutlinedIcon
+        <LocationPin
+        
           lat={location.lat}
           lng={location.lng}
-          text={location.address}
+          text={location.adress}
         />
       </GoogleMapReact>
     </div>

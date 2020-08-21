@@ -1,9 +1,9 @@
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import MusicNoteOutlinedIcon from '@material-ui/icons/MusicNoteOutlined';
 import styles from './Map.module.css'
 
 const LocationPin = ({ text }) => (
     <div className={styles.pin}>
-      <LocationOnIcon icon={LocationOnIcon} className={styles.pinIcon} />
+      <MusicNoteOutlinedIcon icon={MusicNoteOutlinedIcon} className={styles.pinIcon} />
       <p className={styles.pinText}>{text}</p>
     </div>
   )
