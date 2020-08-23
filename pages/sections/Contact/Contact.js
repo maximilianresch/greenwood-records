@@ -4,7 +4,7 @@ import styles from './Contact.module.css'
 export default function Contact() {
     return (
         <div>
-            <h2 className={styles.separator}>Kontakt</h2>
+            <h2 id="contact" className={styles.separator}>Kontakt</h2>
             
             <p className={styles.info}>
             <div>Kontaktieren Sie uns!</div>

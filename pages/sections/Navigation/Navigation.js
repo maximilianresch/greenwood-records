@@ -7,39 +7,34 @@ import styles from "./Navigation.module.css";
 import useResponsive from "../../helper/useResponsive";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
 
 const menuLinks = [
   {
     name: "Studio",
-    href: "",
+    href: "#studio",
+    
   },
   {
     name: "Equipment",
-    href: "",
+    href: "#equipment",
   },
   {
     name: "Leistungen",
-    href: "",
+    href: "#services",
   },
   {
     name: "Galerie",
-    href: "",
+    href: "#gallery",
   },
   {
     name: "Kontakt",
-    href: "",
+    href: "#contact",
   },
 ];
 
@@ -66,7 +61,11 @@ export default function Navigation() {
             </IconButton>
           )}
           <Link href="/">
-            <Typography variant="h5" href="/" style={{marginLeft: !isDesktop ? "auto" : null }}>
+            <Typography
+              variant="h5"
+              href="/"
+              style={{ marginLeft: !isDesktop ? "auto" : null }}
+            >
               <a className={styles.navContent}>greenwoodrecords</a>
             </Typography>
           </Link>
@@ -75,14 +74,13 @@ export default function Navigation() {
             <>
               {menuLinks.map((menuLink) => {
                 return (
-                  <Link href={menuLink.href} as="/">
+                  <Link href={menuLink.href} >
                     <Typography variant="h6">
                       <a className={styles.navContent}> {menuLink.name} </a>
                     </Typography>
                   </Link>
                 );
               })}
-
             </>
           )}
         </Toolbar>
@@ -99,13 +97,13 @@ export default function Navigation() {
         </div>
         <Divider />
         <List>
-          {menuLinks.map(
-            (menuLink) => (
-              <ListItem href={menuLink.href} button key={menuLink.name}>
-                <ListItemText primary={menuLink.name} />
-              </ListItem>
-            )
-          )}
+          {menuLinks.map((menuLink) => (
+            <Link href={menuLink.href} >
+            <ListItem  button key={menuLink.name}>
+              <ListItemText primary={menuLink.name} />
+            </ListItem>
+            </Link>
+          ))}
         </List>
       </Drawer>
     </div>

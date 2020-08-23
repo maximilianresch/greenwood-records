@@ -64,7 +64,7 @@ export default function Gallery() {
   const classes = useStyles();
   return (
     <div>
-      <h2 className={styles.separator}> Gallery</h2>
+      <h2 id="gallery" className={styles.separator}> Gallery</h2>
       <div className={classes.root}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
           {tileData.map((tile) => (

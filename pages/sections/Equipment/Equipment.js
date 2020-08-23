@@ -6,7 +6,7 @@ export default function Equipment() {
   return (
     //create grid or flex system
     <div>
-      <h2 className={styles.separator} style={{ paddingTop: 50 }}>
+      <h2 id="equipment" className={styles.separator} style={{ paddingTop: 50 }}>
         Equipment
       </h2>
       <br />

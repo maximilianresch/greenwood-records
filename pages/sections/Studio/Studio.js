@@ -14,11 +14,7 @@ import styles from "./Studio.module.css";
 export default function Studio() {
   return (
     <div style={{ paddingTop: 50 }}>
-      <div className={styles.separator}>
-        <span>
-          <h2>Studio</h2>
-        </span>
-      </div>
+      <h2 id="studio" className={styles.separator}>Studio </h2>
 
       <br />
       <p>

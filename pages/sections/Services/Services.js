@@ -11,10 +11,11 @@ import { Card, Button, CardTitle, CardText, Row, Col } from "reactstrap";
 export default function Services() {
   return (
     <div>
-      <div className={styles.separator}>
-        <h2>Leistungen</h2>
-      </div>
-        <br />
+      <h2 id="services" className={styles.separator}>
+        Leistungen
+      </h2>
+
+      <br />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. At varius vel
@@ -40,7 +41,7 @@ export default function Services() {
             </Card>
           </Tilt>
         </Col>
-        <br/>
+        <br />
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
