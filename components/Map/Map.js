@@ -6,7 +6,7 @@ import LocationPin from "./LocationPin";
 
 const Map = ({ location, zoomLevel }) => (
   <div className={styles.map}>
-    <h2 className={styles.maph2}>Hier wohnt ein Beidl</h2>
+    <h2 className={styles.maph2}>Unser Standort</h2>
 
     <div className={styles.googleMap}>
       <GoogleMapReact
