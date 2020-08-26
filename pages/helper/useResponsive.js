@@ -24,6 +24,8 @@ const useResponsive = () => {
 
     const [windowDimension, setWindowDimension] = useState(getWindowDimensions())
 
+    
+
     useEffect(() => {
 
         const handleResize = () => {

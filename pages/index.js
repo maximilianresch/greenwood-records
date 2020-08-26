@@ -1,18 +1,17 @@
 import Home from "./sections/Home/Home";
 import Navigation from "./sections/Navigation/Navigation";
 import Studio from "./sections/Studio/Studio";
-import Head from 'next/head'
+import Head from "next/head";
 import Equipment from "./sections/Equipment/Equipment";
 import Services from "./sections/Services/Services";
 import BackToTop from "../components/backToTop";
 import Footer from "./sections/Footer/Footer";
-import Gallery from "./sections/Galerie/Gallery";
+import Gallery from "./sections/Gallery/Gallery";
 import Contact from "./sections/Contact/Contact";
 import MapSection from "../components/Map/Map";
 import styles from "./index.module.css";
 
 const location = {
-  
   adress: "greenwoodrecords",
   lat: 48.472892,
   lng: 15.586909,
@@ -41,12 +40,13 @@ export default function App() {
         <Equipment />
         <Services />
         <Gallery />
-        <Contact />
         <MapSection location={location} zoomLevel={17} />
+        <Contact />
         <br />
+        <BackToTop />
       </div>
+
       <Footer />
-      <BackToTop />
     </div>
   );
 }

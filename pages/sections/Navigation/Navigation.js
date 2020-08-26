@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -18,7 +18,6 @@ const menuLinks = [
   {
     name: "Studio",
     href: "#studio",
-    
   },
   {
     name: "Equipment",
@@ -38,15 +37,15 @@ const menuLinks = [
   },
 ];
 
+// very important -> highlight current section
+
 export default function Navigation() {
   const { isDesktop, windowDimension } = useResponsive();
-
   const [open, setOpen] = React.useState(false);
 
   return (
-    //make it sticky, links, progress
-    <div className={styles.sticky}>
-      <AppBar position="static" className={styles.slider}>
+    <div id="mainNav" className={styles.header}>
+      <AppBar position="static">
         <Toolbar variant="dense" className={styles.navbar}>
           {!isDesktop && !open && (
             <IconButton
@@ -63,10 +62,10 @@ export default function Navigation() {
           <Link href="/">
             <Typography
               variant="h5"
-              href="/"
+              className={styles.navTitle}
               style={{ marginLeft: !isDesktop ? "auto" : null }}
             >
-              <a className={styles.navContent}>greenwoodrecords</a>
+              <div className={styles.navContent}>greenwoodrecords</div>
             </Typography>
           </Link>
 
@@ -74,9 +73,9 @@ export default function Navigation() {
             <>
               {menuLinks.map((menuLink) => {
                 return (
-                  <Link href={menuLink.href} >
+                  <Link href={menuLink.href}>
                     <Typography variant="h6">
-                      <a className={styles.navContent}> {menuLink.name} </a>
+                      <div className={styles.navContent}> {menuLink.name} </div>
                     </Typography>
                   </Link>
                 );
@@ -98,10 +97,10 @@ export default function Navigation() {
         <Divider />
         <List>
           {menuLinks.map((menuLink) => (
-            <Link href={menuLink.href} >
-            <ListItem  button key={menuLink.name}>
-              <ListItemText primary={menuLink.name} />
-            </ListItem>
+            <Link href={menuLink.href}>
+              <ListItem button key={menuLink.name}>
+                <ListItemText primary={menuLink.name} />
+              </ListItem>
             </Link>
           ))}
         </List>

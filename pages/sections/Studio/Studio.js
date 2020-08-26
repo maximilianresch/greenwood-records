@@ -10,6 +10,12 @@ import {
   CardBody,
 } from "reactstrap";
 import styles from "./Studio.module.css";
+import room1 from '../../../public/room1.jpeg';
+import kitchen from '../../../public/kitchen.jpeg'
+import room3 from '../../../public/room3.jpeg'
+
+
+// add (studio) img and make cards overlap it
 
 export default function Studio() {
   return (
@@ -28,6 +34,7 @@ export default function Studio() {
         welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie
         "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.
       </p>
+      <br />
       <div className={styles.cards}>
         <CardDeck>
           <Card className={styles.card}>
@@ -35,18 +42,18 @@ export default function Studio() {
               className={styles.img}
               top
               width="100%"
-              src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              src={room1}
               alt="Card image cap"
             />
             <CardBody>
-              <CardTitle>Room 1</CardTitle>
+              <CardTitle className={styles.title}>Room 1</CardTitle>
               <CardSubtitle>10m2</CardSubtitle>
               <CardText>
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </CardText>
-              <Button className={styles.button}>See more</Button>
+              
             </CardBody>
           </Card>
           <Card className={styles.card}>
@@ -54,17 +61,17 @@ export default function Studio() {
               className={styles.img}
               top
               width="100%"
-              src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              src={kitchen}
               alt="Card image cap"
             />
             <CardBody>
-              <CardTitle>Room 2</CardTitle>
+              <CardTitle className={styles.title}>Room 2</CardTitle>
               <CardSubtitle>20m2</CardSubtitle>
               <CardText>
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </CardText>
-              <Button className={styles.button}>See more</Button>
+              
             </CardBody>
           </Card>
           <Card className={styles.card}>
@@ -72,18 +79,18 @@ export default function Studio() {
               className={styles.img}
               top
               width="100%"
-              src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              src={room3}
               alt="Card image cap"
             />
             <CardBody>
-              <CardTitle>Room 3</CardTitle>
+              <CardTitle className={styles.title}>Room 3</CardTitle>
               <CardSubtitle>30m2</CardSubtitle>
               <CardText>
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              <Button className={styles.button}>See more</Button>
+              
             </CardBody>
           </Card>
         </CardDeck>

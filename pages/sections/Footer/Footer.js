@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import Link from "next/link";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
@@ -26,10 +27,29 @@ export default function Footer() {
         <span className={styles.span}>
           <div> f.hainzl@gwr.at</div>
           <div> +43 699 17007298 </div>
-          <div>
-            <FacebookIcon />
-            <InstagramIcon />
-            <YouTubeIcon />
+          <div className={styles.icons}>
+            <Link href="https://www.facebook.com/fabi.hainzl" prefetch={false}>
+              <a target="_blank" className={styles.facebookIcon}>
+                
+                <FacebookIcon />
+              </a>
+            </Link>
+            <Link
+              href="https://www.instagram.com/fabian.hainzl/"
+              prefetch={false}
+            >
+              <a target="_blank" className={styles.instagramIcon}>
+                <InstagramIcon />
+              </a>
+            </Link>
+            <Link
+              href="https://www.youtube.com/channel/UCtZGaS2Zg6exoyPCpBZEXHg"
+              prefetch={false}
+            >
+              <a target="_blank" className={styles.youtubeIcon}>
+                <YouTubeIcon />
+              </a>
+            </Link>
           </div>
         </span>
       </div>

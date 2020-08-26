@@ -2,7 +2,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #293133;
+  background-color: #ddbea9;
   color: white;
   text-transform: uppercase;
   display: flex;
@@ -12,22 +12,50 @@
 }
 
 .span {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 1.8em;
+  line-height: 2em;
   letter-spacing: 0.1em;
   display: block;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  
 }
 
 @media (max-width: 880px) {
   .footer {
-      display: block;
-      width: 100%;
-      padding-left: 20px;
+    display: block;
+    width: 100%;
+    padding-left: 20px;
   }
+}
+
+.facebookIcon {
+  color: #1877f2;
+}
+
+.facebookIcon:hover {
+  color: #1877f2;
+}
+
+.youtubeIcon {
+  color: #cd201f;
+}
+
+.youtubeIcon:hover {
+  color: #cd201f;
+}
+
+.instagramIcon {
+  color: #e4405f;
+}
+
+.instagramIcon:hover {
+  color: #e4405f;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
 }

@@ -17,18 +17,25 @@
   margin-left: 0.25em;
 }
 
-.equipmentList {
-  display: flex;
+/* .equipmentList {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
   justify-content: space-around;
 }
+
+.wandler {
+  justify-content: center;
+} */
 
 .img {
   display: flex;
   padding: 20px;
   max-width: 100%;
-  max-height: 100%;
-  width: 600px;
-  height: 450px;
+  max-height: 700px;
+  opacity: 0.95;
+  border: 1px #313030;
+  border-radius: 4px;
+  background-color: #313030;
 }
 
 .imgAlign {

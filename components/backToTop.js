@@ -6,7 +6,7 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Fab from "@material-ui/core/Fab";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import Zoom from "@material-ui/core/Zoom";
-import styles from './backToTop.module.css';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
-    backgroundColor: '#6f1d1b',
-    color: '#ffe6a7',
+    backgroundColor: '#cb997e',
+    color: '#f0efeb',
     },
 }));
 

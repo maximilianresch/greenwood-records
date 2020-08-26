@@ -7,7 +7,7 @@ export default function Contact() {
             <h2 id="contact" className={styles.separator}>Kontakt</h2>
             
             <p className={styles.info}>
-            <div>Kontaktieren Sie uns!</div>
+            <div className={styles.contactUs}>Wir freuen uns auf Ihre Nachricht!</div>
             <div>Tonstudio</div>
             <div>Fabian Hainzl</div>
             <div>Gföhlerstraße xx</div>

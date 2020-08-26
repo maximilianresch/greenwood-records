@@ -15,7 +15,7 @@ const Map = ({ location, zoomLevel }) => (
         defaultZoom={12}
       >
         <LocationPin
-        
+          
           lat={location.lat}
           lng={location.lng}
           text={location.adress}

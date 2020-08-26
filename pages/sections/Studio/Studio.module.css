@@ -23,6 +23,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
     color: rgb(34, 34, 34);
+    
 }
 
 
@@ -35,6 +36,11 @@
 .button {
     background-color: #ac4034;
     border: none;
+}
+
+.title {
+    font-weight: 700;
+    
 }
 
 

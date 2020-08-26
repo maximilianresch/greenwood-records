@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   justify-items: baseline;
-  background-color: #293133;
+  background-color: #343a40;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
-.sticky {
+.header {
   position: sticky;
   width: 100%;
   top: 0;
@@ -14,17 +15,18 @@
 }
 
 .navContent {
-  transform: translate(-50%, 50%);
+  
   white-space: nowrap;
   transition: all 0.5s;
   cursor: pointer;
-  text-decoration: none;
+
   color: #ffffff;
 }
 
-.navContent:hover {
-  color: blanchedalmond;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+
+
+@media only screen and (max-width: 768px) {
+  .navTitle {
+    margin-left: auto !important;
+  }
 }
-
-

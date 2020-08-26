@@ -4,11 +4,12 @@ import styles from './Home.module.css';
 import img from "../../../public/undraw_compose_music_ovo2.svg";
 import img1 from "../../../public/undraw_happy_music_g6wc.svg";
 import img2 from "../../../public/undraw_more_music_w70e.svg";
+import img3 from '../../../public/greenwoodrecords-logo.png';
 
 
 const items = [
   {
-    src: img,
+    src: img3,
     altText: "Slide 1",
     caption: "Slide 1",
     header: "Slide 1 Header",
@@ -30,6 +31,13 @@ const items = [
     header: "Slide 3 Header",
     key: "3",
   },
+  {
+    src: img,
+    altText: "Slide 4",
+    caption: "Slide 4",
+    header: "Slide 4 Header",
+    key: "4",
+  },
 ];
 
 function Home() {
@@ -42,4 +50,4 @@ function Home() {
 
 export default Home;
 
-//try to implement pictures
+

@@ -6,7 +6,10 @@ import Tilt from "react-tilt";
 // import CardContent from "@material-ui/core/CardContent";
 // import Button from "@material-ui/core/Button";
 // import Typography from "@material-ui/core/Typography";
-import { Card, Button, CardTitle, CardText, Row, Col } from "reactstrap";
+import { Card, CardTitle, CardText, Row, Col } from "reactstrap";
+import img from '../../../public/tymur-kuchumov-i6HKsKPjDKk-unsplash.jpg';
+
+
 
 export default function Services() {
   return (
@@ -25,19 +28,26 @@ export default function Services() {
         sem et tortor.
       </p>
 
+      <img src={img} alt="" className={styles.img}/>
+
       <Row className={styles.card}>
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
               <CardTitle>Inklusive Techniker</CardTitle>
               <CardText>
-                Komplettes Studio ab €2.000.- / Tag
+              <div className={styles.pricing}>
+                Komplettes Studio
+                </div>
+                <div>1000€ pro Tag</div>
+                <div>700€ für 3 Tage</div>
+                <div>100€ /h</div>
+                <br/>
                 <p>
                   metus dictum at tempor commodo ullamcorper a lacus vestibulum
                   sed arcu non odio euismod lacinia
                 </p>
               </CardText>
-              <Button className={styles.button}>Get started</Button>
             </Card>
           </Tilt>
         </Col>
@@ -47,13 +57,18 @@ export default function Services() {
             <Card body className={styles.cardStyle}>
               <CardTitle>Ohne Techniker</CardTitle>
               <CardText>
-                Komplettes Studio ab €1.000.- / Tag
+              <div className={styles.pricing}>
+                Komplettes Studio
+                </div>
+                <div>1000€ pro Tag</div>
+                <div>700€ für 3 Tage</div>
+                <div>100€ /h</div>
+                <br />
                 <p>
                   metus dictum at tempor commodo ullamcorper a lacus vestibulum
                   sed arcu non odio euismod lacinia
                 </p>
               </CardText>
-              <Button className={styles.button}>Jetzt Aufnehmen</Button>
             </Card>
           </Tilt>
         </Col>
