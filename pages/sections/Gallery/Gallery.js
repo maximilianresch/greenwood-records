@@ -24,37 +24,37 @@ const useStyles = makeStyles((theme) => ({
 const tileData = [
   {
     img: image,
-    title: "oasch",
+    title: "placeholder",
     author: "author",
     cols: 1,
   },
   {
     img: image,
-    title: "fut",
+    title: "placeholder",
     author: "author",
     cols: 2,
   },
   {
     img: image,
-    title: "beidl",
+    title: "placeholder",
     author: "author",
     cols: 3,
   },
   {
     img: image,
-    title: "trink",
+    title: "placeholder",
     author: "author",
     cols: 1,
   },
   {
     img: image,
-    title: "ma nu a",
+    title: "placeholder",
     author: "author",
     cols: 1,
   },
   {
     img: image,
-    title: "seidl",
+    title: "placeholder",
     author: "author",
     cols: 1,
   },
@@ -66,14 +66,17 @@ const tileData = [
 
 export default function Gallery() {
   const classes = useStyles();
+
   return (
-    <div>
+
+    
+    <div id="myModal">
       <h2 id="gallery" className={styles.separator}> Galerie</h2>
       <div className={classes.root}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
           {tileData.map((tile) => (
             <GridListTile key={tile.img} cols={tile.cols || 1}>
-              <img src={tile.img} alt={tile.title} />
+              <img src={tile.img} alt={tile.title} id="myImg" /> 
               <GridListTileBar
               title={tile.title}
               titlePosition="bottom" />
@@ -82,5 +85,6 @@ export default function Gallery() {
         </GridList>
       </div>
     </div>
+    
   );
 }

@@ -11,8 +11,8 @@ import Contact from "./sections/Contact/Contact";
 import MapSection from "../components/Map/Map";
 import styles from "./index.module.css";
 
+
 const location = {
-  adress: "greenwoodrecords",
   lat: 48.472892,
   lng: 15.586909,
 };
@@ -34,7 +34,7 @@ export default function App() {
       <div className={styles.content}>
         <Navigation />
         <h4 style={{ textAlign: "center", paddingTop: 30 }}>
-          Kleiner text -> Kurze Beschreibung
+          Kurze Beschreibung über das Tonstudio
         </h4>
         <Studio />
         <Equipment />

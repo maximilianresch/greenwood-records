@@ -15,16 +15,7 @@
   transform: translate(-50%, -50%);
 }
 
-.pinText {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #ac4034;
-  border: solid;
-  background-color: aliceblue;
-}
+
 
 @media screen and (min-width: 799px) {
   .googleMap {

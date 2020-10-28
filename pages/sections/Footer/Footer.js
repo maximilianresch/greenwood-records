@@ -10,7 +10,7 @@ export default function Footer() {
     <div className={styles.footer}>
       <div>
         <span className={styles.span}>
-          <p>-copyright- greenwoodrecords, record now</p>
+          <p>© greenwoodrecords, record now</p>
           <a>Impressum</a>
           <a>AGB</a>
           <a>Datenschutzerklärung</a>
@@ -25,17 +25,17 @@ export default function Footer() {
       </div>
       <div>
         <span className={styles.span}>
-          <div> f.hainzl@gwr.at</div>
-          <div> +43 699 17007298 </div>
+          <div> max.mustermann@gmail.com</div>
+          <div> +43 650 1234123 </div>
           <div className={styles.icons}>
-            <Link href="https://www.facebook.com/fabi.hainzl" prefetch={false}>
+            <Link href="https://www.facebook.com" prefetch={false}>
               <a target="_blank" className={styles.facebookIcon}>
                 
                 <FacebookIcon />
               </a>
             </Link>
             <Link
-              href="https://www.instagram.com/fabian.hainzl/"
+              href="https://www.instagram.com"
               prefetch={false}
             >
               <a target="_blank" className={styles.instagramIcon}>
@@ -43,7 +43,7 @@ export default function Footer() {
               </a>
             </Link>
             <Link
-              href="https://www.youtube.com/channel/UCtZGaS2Zg6exoyPCpBZEXHg"
+              href="https://www.youtube.com"
               prefetch={false}
             >
               <a target="_blank" className={styles.youtubeIcon}>

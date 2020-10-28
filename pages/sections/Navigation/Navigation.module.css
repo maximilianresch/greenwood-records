@@ -23,6 +23,9 @@
   color: #ffffff;
 }
 
+.isCurrent {
+  color: yellow;
+}
 
 
 @media only screen and (max-width: 768px) {
