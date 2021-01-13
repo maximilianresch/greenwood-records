@@ -15,7 +15,6 @@
 }
 
 .navContent {
-  
   white-space: nowrap;
   transition: all 0.5s;
   cursor: pointer;
@@ -27,6 +26,10 @@
   color: yellow;
 }
 
+.logo {
+  height: 75px;
+  width: 80px;
+}
 
 @media only screen and (max-width: 768px) {
   .navTitle {

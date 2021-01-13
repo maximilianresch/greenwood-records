@@ -7,9 +7,7 @@ import Tilt from "react-tilt";
 // import Button from "@material-ui/core/Button";
 // import Typography from "@material-ui/core/Typography";
 import { Card, CardTitle, CardText, Row, Col } from "reactstrap";
-import img from '../../../public/tymur-kuchumov-i6HKsKPjDKk-unsplash.jpg';
-
-
+import img from "../../../public/tymur-kuchumov-i6HKsKPjDKk-unsplash.jpg";
 
 export default function Services() {
   return (
@@ -20,33 +18,21 @@ export default function Services() {
 
       <br />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. At varius vel
-        pharetra vel turpis nunc eget lorem. Pharetra diam sit amet nisl. Sit
-        amet volutpat consequat mauris nunc congue nisi. At quis risus sed
-        vulputate odio. Sit amet dictum sit amet justo donec enim. Nam aliquam
-        sem et tortor.
+        Alle Preise excl. 20% MwSt. Auf Anfrage erstelle ich gerne ein Angebot
+        für Ihre Aufnahme.
       </p>
 
-      <img src={img} alt="" className={styles.img}/>
+      <img src={img} alt="" className={styles.img} />
 
       <Row className={styles.card}>
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
-              <CardTitle>Inklusive Techniker</CardTitle>
+              <CardTitle><h6>Aufnahme mit Techniker</h6></CardTitle>
               <CardText>
-              <div className={styles.pricing}>
-                Komplettes Studio
-                </div>
-                <div>1000€ pro Tag</div>
-                <div>700€ für 3 Tage</div>
-                <div>100€ /h</div>
-                <br/>
-                <p>
-                  metus dictum at tempor commodo ullamcorper a lacus vestibulum
-                  sed arcu non odio euismod lacinia
-                </p>
+                <div>550€ pro Tag</div>
+                <div>500€ ab 3 Tagen</div>
+                <div>Schneiden/Post Production/Mischen 60€ pro Stunde</div>
               </CardText>
             </Card>
           </Tilt>
@@ -54,20 +40,23 @@ export default function Services() {
         <br />
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
-            <Card body className={styles.cardStyle}>
-              <CardTitle>Ohne Techniker</CardTitle>
+            <Card style={{paddingBottom: "42px"}} body className={styles.cardStyle}>
+              <CardTitle><h6>Aufnahme ohne Techniker</h6></CardTitle>
               <CardText>
-              <div className={styles.pricing}>
-                Komplettes Studio
-                </div>
-                <div>1000€ pro Tag</div>
-                <div>700€ für 3 Tage</div>
-                <div>100€ /h</div>
-                <br />
-                <p>
-                  metus dictum at tempor commodo ullamcorper a lacus vestibulum
-                  sed arcu non odio euismod lacinia
-                </p>
+                <div>300€ pro Tag</div>
+                <div>250€ ab 3 Tagen</div>
+              </CardText>
+            </Card>
+          </Tilt>
+        </Col>
+
+        <Col sm="6">
+          <Tilt options={{ max: 0 }}>
+            <Card body className={styles.cardStyle}>
+              <CardTitle><h6>Klavierstimmer</h6></CardTitle>
+              <CardText>
+                <div>140€ pro Stimmung</div>
+                <div>Der Flügle ist auf 440 Hz gestimmt.</div>
               </CardText>
             </Card>
           </Tilt>

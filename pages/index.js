@@ -12,6 +12,8 @@ import MapSection from "../components/Map/Map";
 import styles from "./index.module.css";
 
 
+
+
 const location = {
   lat: 48.472892,
   lng: 15.586909,

@@ -10,29 +10,32 @@ import {
   CardBody,
 } from "reactstrap";
 import styles from "./Studio.module.css";
-import room1 from '../../../public/room1.jpeg';
-import kitchen from '../../../public/kitchen.jpeg'
-import room3 from '../../../public/room3.jpeg'
-
+import room1 from "../../../public/room1.jpeg";
+import kitchen from "../../../public/kitchen.jpeg";
+import room3 from "../../../public/room3.jpeg";
 
 // add (studio) img and make cards overlap it
 
 export default function Studio() {
   return (
     <div style={{ paddingTop: 50 }}>
-      <h2 id="studio" className={styles.separator}>Studio </h2>
+      <h2 id="studio" className={styles.separator}>
+        Studio{" "}
+      </h2>
 
       <br />
       <p>
-        Lorem Ipsum ist ein einfacher Demo-Text für die Print- und
-        Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard
-        Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll
-        Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen.
-        Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die
-        elektronische Schriftbearbeitung geschafft (bemerke, nahezu
-        unverändert). Bekannt wurde es 1960, mit dem erscheinen von "Letraset",
-        welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie
-        "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.
+        Aus einer alten Traktorgarage für unseren Weinbetrieb wurde mit viel
+        Arbeit ein Tonstudio geschaffen. Der Bau war eine große Herausforderung
+        und unterzog sich langer Planungszeit. Jetzt freuen wir uns das Studio
+        so präsentieren zukönnen. Zwei Aufnahmeräume mit 45 m2 und 10 m2, sowie
+        eine Regie mit 25 m2 und eine kleine Küche / WC umfassen das Gebäude.
+        Aber die Erinnerungen an den Weinbetrieb und die Geschichte dieses
+        Grundstückes bleiben nicht aus. Im alten Heurigenlokal beziehungsweise
+        Weinkeller wartet ein großer Aufenthaltsraum mit großzügiger Bar und
+        Küche, welcher ebenso zu einer weiteren Aufnahmemöglichkeit
+        umfunktioniert werden kann. Dieser Raum bietet noch extra 100 m2. Das
+        Studio und das Lokal sind per Video miteinander verbunden.
       </p>
       <br />
       <div className={styles.cards}>
@@ -53,7 +56,6 @@ export default function Studio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </CardText>
-              
             </CardBody>
           </Card>
           <Card className={styles.card}>
@@ -71,7 +73,6 @@ export default function Studio() {
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </CardText>
-              
             </CardBody>
           </Card>
           <Card className={styles.card}>
@@ -90,7 +91,6 @@ export default function Studio() {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </CardText>
-              
             </CardBody>
           </Card>
         </CardDeck>
