@@ -38,10 +38,7 @@
   background-color: #313030;
 }
 
-.imgAlign {
-  display: flex;
-  justify-content: center;
-}
+
 
 
 @media (max-width: 768px) {

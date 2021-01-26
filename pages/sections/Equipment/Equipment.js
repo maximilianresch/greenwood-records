@@ -20,7 +20,7 @@ export default function Equipment() {
         Equipment
       </h2>
       <br />
-      <div className={styles.imgAlign}>
+      <div>
         <img src={img} alt="" className={styles.img} />
       </div>
       <br />
