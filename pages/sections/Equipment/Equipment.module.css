@@ -29,8 +29,9 @@
 
 .img {
   padding: 20px;
-  width: 95vw;
-  height: auto;
+
+  height: 55vw;
+  width: 100%;
   opacity: 0.95;
   border: 1px #313030;
   border-radius: 4px;
@@ -40,6 +41,13 @@
 .imgAlign {
   display: flex;
   justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .img {
+      height: auto;
+  }
 }
 
 
