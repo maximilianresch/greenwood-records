@@ -53,4 +53,3 @@ export default function App() {
   );
 }
 
-// next big step to make it responsive

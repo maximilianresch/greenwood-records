@@ -4,8 +4,6 @@ import img from "../../../public/steve-harvey-KrDsArJuy1A-unsplash.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 
-
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -15,14 +13,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Equipment() {
   const classes = useStyles();
-  
+
   return (
-    <div>
-      <h2
-        id="equipment"
-        className={styles.separator}
-        style={{ paddingTop: 50 }}
-      >
+    <div id="equipment">
+      <h2 className={styles.separator} style={{ paddingTop: 50 }}>
         Equipment
       </h2>
       <br />
@@ -91,10 +85,6 @@ export default function Equipment() {
             </ul>
           </Grid>
         </Grid>
-        
-  
-          
-        
       </div>
 
       {/* <div className={styles.equipmentList}>

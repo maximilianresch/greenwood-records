@@ -42,7 +42,7 @@ const items = [
 
 function Home() {
   return (
-    <div className={styles.imageContainer}>
+    <div>
       <UncontrolledCarousel items={items} className={styles.image}/>
     </div>
   );

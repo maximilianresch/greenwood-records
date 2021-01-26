@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gridList: {
     width: 900,
-    height: 550,
+    height: "auto",
   },
 }));
 
@@ -70,8 +70,8 @@ export default function Gallery() {
   return (
 
     
-    <div id="myModal">
-      <h2 id="gallery" className={styles.separator}> Galerie</h2>
+    <div id="myModal" id="gallery">
+      <h2  className={styles.separator}> Galerie</h2>
       <div className={classes.root}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
           {tileData.map((tile) => (

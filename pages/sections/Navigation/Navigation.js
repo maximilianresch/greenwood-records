@@ -13,7 +13,6 @@ import Divider from "@material-ui/core/Divider";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import logo from '../../../public/greenwoodrecords-newLogo.png';
 
 const menuLinks = [
   {
@@ -66,7 +65,7 @@ export default function Navigation() {
               className={styles.navTitle}
               style={{ marginLeft: !isDesktop ? "auto" : null }}
             >
-            <div className={styles.navContent}> <img src={logo} alt="" className={styles.logo} /></div>
+              <div className={styles.navContent}>greenwoodrecords </div>
             </Typography>
           </Link>
 

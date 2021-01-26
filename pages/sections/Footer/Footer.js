@@ -18,24 +18,24 @@ export default function Footer() {
       </div>
       <div>
         <span className={styles.span}>
-          <div>Gföhlerstraße xx</div>
+          <div>Gföhlerstraße 34</div>
           <div> 3552 Lengenfeld</div>
           <div>Österreich</div>
         </span>
       </div>
       <div>
         <span className={styles.span}>
-          <div> max.mustermann@gmail.com</div>
-          <div> +43 650 1234123 </div>
+          <div> fhainzl88@gmail.com</div>
+          <div> +43 699 17007298 </div>
           <div className={styles.icons}>
-            <Link href="https://www.facebook.com" prefetch={false}>
+            <Link href="https://www.facebook.com/fabi.hainzl" prefetch={false}>
               <a target="_blank" className={styles.facebookIcon}>
                 
                 <FacebookIcon />
               </a>
             </Link>
             <Link
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/fabian.hainzl/"
               prefetch={false}
             >
               <a target="_blank" className={styles.instagramIcon}>

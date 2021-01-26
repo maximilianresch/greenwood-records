@@ -1,23 +1,19 @@
 .image {
-    display: block;
     width: auto;
-    height: 630px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
  }
 
  @media (max-width: 768px) {
      .image {
-        display: block;
         width: auto;
         padding-top: 40px;
-        height: 240px;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
      }
  }
-
 
 
 

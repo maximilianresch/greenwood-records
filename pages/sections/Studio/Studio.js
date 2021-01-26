@@ -18,8 +18,8 @@ import room3 from "../../../public/room3.jpeg";
 
 export default function Studio() {
   return (
-    <div style={{ paddingTop: 50 }}>
-      <h2 id="studio" className={styles.separator}>
+    <div style={{ paddingTop: 50 }} id="studio">
+      <h2  className={styles.separator}>
         Studio{" "}
       </h2>
 

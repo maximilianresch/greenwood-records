@@ -11,8 +11,8 @@ import img from "../../../public/tymur-kuchumov-i6HKsKPjDKk-unsplash.jpg";
 
 export default function Services() {
   return (
-    <div>
-      <h2 id="services" className={styles.separator}>
+    <div id="services" >
+      <h2 className={styles.separator}>
         Leistungen
       </h2>
 
@@ -62,6 +62,12 @@ export default function Services() {
           </Tilt>
         </Col>
       </Row>
+      <p>
+        Alle Preise excl. 20% MwSt. Auf Anfrage erstelle ich gerne ein Angebot
+        für Ihre Aufnahme.
+      </p>
+
+      <br/>
 
       {/* <div className={styles.card}>
       
