@@ -29,8 +29,8 @@
 
 .img {
   padding: 20px;
-  max-width: 100%;
-  max-height: auto;
+  width: 95vw;
+  height: auto;
   opacity: 0.95;
   border: 1px #313030;
   border-radius: 4px;
@@ -41,3 +41,5 @@
   display: flex;
   justify-content: center;
 }
+
+
