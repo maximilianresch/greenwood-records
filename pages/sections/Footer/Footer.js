@@ -28,8 +28,8 @@ export default function Footer() {
           <div> fhainzl88@gmail.com</div>
           <div> +43 699 17007298 </div>
           <div className={styles.icons}>
-            <Link  prefetch={false}>
-              <a  href="https://www.facebook.com/fabi.hainzl" target="_blank" className={styles.facebookIcon}>
+            <Link  prefetch={false} href="https://www.facebook.com/fabi.hainzl" target="_blank" >
+              <a  className={styles.facebookIcon}>
                 
                 <FacebookIcon />
               </a>
