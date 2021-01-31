@@ -29,13 +29,13 @@
 
 .img {
   padding: 20px;
-
-  height: 55vw;
-  width: 100%;
-  opacity: 0.95;
+  height: 60vh;
+  width: auto;
   border: 1px #313030;
   border-radius: 4px;
   background-color: #313030;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -43,7 +43,8 @@
 
 @media (max-width: 768px) {
   .img {
-      height: auto;
+    height: auto;
+  width: 100%;
   }
 }
 

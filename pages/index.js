@@ -20,16 +20,14 @@ export default function App() {
   return (
     <div>
       <Head>
-        <title>greenwoodrecords</title>
+        <title>greenwoodrecords - Tonstudio</title>
         <meta
           name="viewport"
           content="initial-scale=1, width=device-width"
           shrink-to-fit="no"
         />
-        <meta property="og:title" content="My page title" key="title" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta
-          name="Description"
+          name="description"
           content="Tonstudio - Musikproduktion. Greenwoodrecords ist der perfekte Standort für ihre Aufnahmen. Wir freuen uns über jedes Genre, egal ob Pop, Klassik, Jazz, Rock."
         />
       </Head>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Equipment.module.css";
-import img from "../../../public/steve-harvey-KrDsArJuy1A-unsplash.jpg";
+import img from "../../../public/Equipment.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 

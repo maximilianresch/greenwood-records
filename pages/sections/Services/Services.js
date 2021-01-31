@@ -8,19 +8,14 @@ import Tilt from "react-tilt";
 // import Typography from "@material-ui/core/Typography";
 import { Card, CardTitle, CardText, Row, Col } from "reactstrap";
 import img from "../../../public/tymur-kuchumov-i6HKsKPjDKk-unsplash.jpg";
+import Divider from '@material-ui/core/Divider';
 
 export default function Services() {
   return (
-    <div id="services" >
-      <h2 className={styles.separator}>
-        Leistungen
-      </h2>
+    <div id="services">
+      <h2 className={styles.separator}>Leistungen</h2>
 
       <br />
-      <p>
-        Alle Preise excl. 20% MwSt. Auf Anfrage erstelle ich gerne ein Angebot
-        für Ihre Aufnahme.
-      </p>
 
       <img src={img} alt="" className={styles.img} />
 
@@ -28,11 +23,15 @@ export default function Services() {
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
-              <CardTitle><h6>Aufnahme mit Techniker</h6></CardTitle>
+              <CardTitle>
+                <h6>Aufnahme mit Techniker</h6>
+              </CardTitle>
               <CardText>
                 <div>550€ pro Tag</div>
                 <div>500€ ab 3 Tagen</div>
                 <div>Schneiden/Post Production/Mischen 60€ pro Stunde</div>
+                <Divider />
+                <div>exkl. 20% MwSt.</div>
               </CardText>
             </Card>
           </Tilt>
@@ -40,11 +39,19 @@ export default function Services() {
         <br />
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
-            <Card style={{paddingBottom: "42px"}} body className={styles.cardStyle}>
-              <CardTitle><h6>Aufnahme ohne Techniker</h6></CardTitle>
+            <Card
+              style={{ paddingBottom: "42px" }}
+              body
+              className={styles.cardStyle}
+            >
+              <CardTitle>
+                <h6>Aufnahme ohne Techniker</h6>
+              </CardTitle>
               <CardText>
                 <div>300€ pro Tag</div>
                 <div>250€ ab 3 Tagen</div>
+                <Divider />
+                <div>exkl. 20% MwSt.</div>
               </CardText>
             </Card>
           </Tilt>
@@ -53,21 +60,22 @@ export default function Services() {
         <Col sm="6">
           <Tilt options={{ max: 0 }}>
             <Card body className={styles.cardStyle}>
-              <CardTitle><h6>Klavierstimmer</h6></CardTitle>
+              <CardTitle>
+                <h6>Klavierstimmer</h6>
+              </CardTitle>
               <CardText>
                 <div>140€ pro Stimmung</div>
                 <div>Der Flügel ist auf 440 Hz gestimmt.</div>
+                <Divider/>
+                <div>exkl. 20% MwSt.</div>
               </CardText>
             </Card>
           </Tilt>
         </Col>
       </Row>
-      <p>
-        Alle Preise excl. 20% MwSt. Auf Anfrage erstelle ich gerne ein Angebot
-        für Ihre Aufnahme.
-      </p>
+      <p style={{textAlign: "center", fontSize: "25px"}}>Auf Anfrage erstelle ich Ihnen auch gerne ein Angebot für Ihre Aufnahme.</p>
 
-      <br/>
+      <br />
 
       {/* <div className={styles.card}>
       

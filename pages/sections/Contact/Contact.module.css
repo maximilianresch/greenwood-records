@@ -34,7 +34,8 @@
 }
 
 .media {
-  height: 140px;
+  min-height: 280px;
+  margin: 5px;
 }
 
 .aboutMeCard {

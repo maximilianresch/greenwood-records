@@ -1,11 +1,10 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import styles from "./Contact.module.css";
-import img from "../../../public/jamie-haughton-Z05GiksmqYU-unsplash.jpg";
+import img from "../../../public/ContactImage.jpg";
 import PressArticle from "../../components/PressArticle";
 
 export default function Contact() {
@@ -19,7 +18,7 @@ export default function Contact() {
               className={styles.media}
               image={img}
               title="Fabian Hainzl"
-            />
+            ></CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 Fabian Hainzl
@@ -28,9 +27,10 @@ export default function Contact() {
                 <b> Tonmeister</b>
                 <br />
                 <br />
-                "There are two kinds of companies, those that work to try to
-                charge more and those that work to charge less. We will be the
-                second."
+                Meine jahrelange Erfahrung als Musiker hilft mir in der Arbeit
+                als Tonmeister und Produzent. Des weiteren belege ich das
+                Tonmeisterstudium an der Universität für Musik und darstellende
+                Kunst Wien.
               </Typography>
             </CardContent>
           </Card>
@@ -44,15 +44,15 @@ export default function Contact() {
           <div>Gföhlerstraße 34</div>
           <div>A-3552 Lengenfeld</div>
           <div>
-            Tel: <a href="tel: +43 699 17007298">+43 699 17007298</a>
+            Tel: <a href="tel: +43 699 17007298">+43 660 3002487 </a>
           </div>
           <div>
             e-mail:{" "}
             <a
-              href="mailto:fhainzl88@gmail.com?subject=GreenwoodRecords%20Anfrage"
+              href="mailto:office@greenwoodrecords.at?subject=greenwoodrecords%20Anfrage"
               target="_blank"
             >
-              fhainzl88@gmail.com
+              office@greenwoodrecords.at
             </a>{" "}
           </div>
         </address>
