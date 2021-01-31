@@ -28,9 +28,11 @@ export default function Footer() {
           <div> office@greenwoodrecords.at</div>
           <div> +43 660 3002487 </div>
           <div className={styles.icons}>
-            <Link  prefetch={false} href="https://www.facebook.com/Greenwoodrecords-104374568346681" target="_blank" >
-              <a  className={styles.facebookIcon}>
-                
+            <Link
+              prefetch={false}
+              href="https://www.facebook.com/Greenwoodrecords-104374568346681"
+            >
+              <a target="_blank" className={styles.facebookIcon}>
                 <FacebookIcon />
               </a>
             </Link>

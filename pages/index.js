@@ -34,9 +34,6 @@ export default function App() {
       <Home />
       <div className={styles.content}>
         <Navigation />
-        <h4 style={{ textAlign: "center", paddingTop: 30 }}>
-          Kurze Beschreibung über das Tonstudio
-        </h4>
         <Studio />
         <Equipment />
         <Services />

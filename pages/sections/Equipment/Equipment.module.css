@@ -28,6 +28,7 @@
 } */
 
 .img {
+  display: block;
   padding: 20px;
   height: 60vh;
   width: auto;

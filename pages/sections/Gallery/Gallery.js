@@ -6,7 +6,6 @@ import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import img from '../../../public/Gallery/couch.jpg'
 import img1 from '../../../public/Gallery/Flügel.jpg'
-import img2 from '../../../public/Gallery/GalerieFoto.jpg'
 import img3 from '../../../public/Gallery/GalerieFoto1.jpg'
 import img4 from '../../../public/Gallery/Serverraum.jpg'
 import img5 from '../../../public/Gallery/GalerieFoto2.jpg'
@@ -38,12 +37,6 @@ const tileData = [
     title: "placeholder",
     author: "author",
     cols: 2,
-  },
-  {
-    img: img2,
-    title: "placeholder",
-    author: "author",
-    cols: 3,
   },
   {
     img: img3,
