@@ -56,7 +56,7 @@ export default function Services() {
               <CardTitle><h6>Klavierstimmer</h6></CardTitle>
               <CardText>
                 <div>140€ pro Stimmung</div>
-                <div>Der Flügle ist auf 440 Hz gestimmt.</div>
+                <div>Der Flügel ist auf 440 Hz gestimmt.</div>
               </CardText>
             </Card>
           </Tilt>

@@ -28,14 +28,14 @@ export default function Footer() {
           <div> fhainzl88@gmail.com</div>
           <div> +43 699 17007298 </div>
           <div className={styles.icons}>
-            <Link href="https://www.facebook.com/fabi.hainzl" prefetch={false}>
-              <a target="_blank" className={styles.facebookIcon}>
+            <Link  prefetch={false}>
+              <a  href="https://www.facebook.com/fabi.hainzl" target="_blank" className={styles.facebookIcon}>
                 
                 <FacebookIcon />
               </a>
             </Link>
             <Link
-              href="https://www.instagram.com/fabian.hainzl/"
+              href="https://www.instagram.com/greenwood_records/"
               prefetch={false}
             >
               <a target="_blank" className={styles.instagramIcon}>

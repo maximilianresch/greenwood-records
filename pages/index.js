@@ -11,9 +11,6 @@ import Contact from "./sections/Contact/Contact";
 import MapSection from "../components/Map/Map";
 import styles from "./index.module.css";
 
-
-
-
 const location = {
   lat: 48.472892,
   lng: 15.586909,
@@ -31,6 +28,10 @@ export default function App() {
         />
         <meta property="og:title" content="My page title" key="title" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="Description"
+          content="Tonstudio - Musikproduktion. Greenwoodrecords ist der perfekte Standort für ihre Aufnahmen. Wir freuen uns über jedes Genre, egal ob Pop, Klassik, Jazz, Rock."
+        />
       </Head>
       <Home />
       <div className={styles.content}>
@@ -52,4 +53,3 @@ export default function App() {
     </div>
   );
 }
-
