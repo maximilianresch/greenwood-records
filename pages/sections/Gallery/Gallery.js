@@ -60,7 +60,7 @@ export default function Gallery() {
 
   return (
     <div id="myModal" id="gallery">
-      <h2 className={styles.separator}> Galerie</h2>
+      <h2> Galerie</h2>
       <div className={classes.root}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
           {tileData.map((tile) => (

@@ -17,7 +17,7 @@ export default function Equipment() {
 
   return (
     <div id="equipment">
-      <h2 className={styles.separator} style={{ paddingTop: 50 }}>
+      <h2  style={{ paddingTop: 50 }}>
         Equipment
       </h2>
       <br />

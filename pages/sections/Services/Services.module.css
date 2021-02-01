@@ -1,21 +1,4 @@
-.separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-top: 30px;
-    text-transform: uppercase;
-}
-.separator::before, .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #000;
-}
-.separator::before {
-    margin-right: .25em;
-}
-.separator::after {
-    margin-left: .25em;
-}
+
 
 .card {
     max-width: 255;

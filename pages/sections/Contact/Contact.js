@@ -5,28 +5,27 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import styles from "./Contact.module.css";
-import PressArticle from "../../components/PressArticle";
+import PressArticle from "../../../components/PressArticle";
+import img from "../../../public/ContactImage.webp"
 
 export default function Contact() {
   return (
     <div id="contact">
-      <h2 className={styles.separator}>Kontakt</h2>
+      <h2>Kontakt</h2>
       <div className={styles.contactSection}>
         <div>
           <Card className={styles.aboutMeCard}>
             <CardMedia className={styles.media}>
-              <picture>
                 <Image
-                  src={require("../../../public/ContactImage.webp")}
+                src={img}
                   layout="responsive"
                   width={290}
                   height={280}
                   alt="Fabian Hainzl"
                 />
-              </picture>
             </CardMedia>
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" component="h3">
                 Fabian Hainzl
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
@@ -64,7 +63,7 @@ export default function Contact() {
         </address>
       </div>
       <div>
-        <h2 style={{ textAlign: "center", paddingTop: "50px" }}>Medien</h2>
+        <h3 style={{ textAlign: "center", paddingTop: "50px", fontSize: "38px" }}>Medien</h3>
         <div
           style={{
             display: "flex",

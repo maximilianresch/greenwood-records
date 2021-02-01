@@ -14,7 +14,7 @@ import Image from 'next/image'
 export default function Services() {
   return (
     <div id="services">
-      <h2 className={styles.separator}>Leistungen</h2>
+      <h2>Leistungen</h2>
 
       <br />
 

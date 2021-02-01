@@ -20,7 +20,7 @@ import img2 from "../../../public/Aufnahmeraum2.webp";
 export default function Studio() {
   return (
     <div style={{ paddingTop: 50 }} id="studio">
-      <h2 className={styles.separator}>Studio </h2>
+      <h2>Studio </h2>
 
       <br />
       <p>

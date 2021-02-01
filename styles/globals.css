@@ -15,8 +15,28 @@ body {
   font-weight: 300;
 }
 
-html, body p {
+ p {
   text-align: justify;
+}
+
+ h2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+ h2::before,
+ h2::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+ h2::before {
+  margin-right: 0.25em;
+}
+ h2::after {
+  margin-left: 0.25em;
 }
 
 
