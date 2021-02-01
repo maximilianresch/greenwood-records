@@ -5,7 +5,6 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import styles from "./Contact.module.css";
-import img from "../../../public/ContactImage.webp";
 import PressArticle from "../../components/PressArticle";
 
 export default function Contact() {
@@ -16,13 +15,15 @@ export default function Contact() {
         <div>
           <Card className={styles.aboutMeCard}>
             <CardMedia className={styles.media}>
-              <Image
-                src={img}
-                layout="responsive"
-                width={290}
-                height={280}
-                alt="Fabian Hainzl"
-              />
+              <picture>
+                <Image
+                  src={require("../../../public/ContactImage.webp")}
+                  layout="responsive"
+                  width={290}
+                  height={280}
+                  alt="Fabian Hainzl"
+                />
+              </picture>
             </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
