@@ -10,23 +10,20 @@ const items = [
   {
     src: img2,
     altText: "Slide 2",
-    caption: "Slide 2",
-    header: "Slide 2 Header",
+    caption: "",
     key: "2",
     
   },
   {
     src: img,
     altText: "Slide 3",
-    caption: "Slide 3",
-    header: "Slide 3 Header",
+    caption: "",
     key: "3",
   },
   {
     src: img1,
     altText: "Slide 4",
-    caption: "Slide 4",
-    header: "Slide 4 Header",
+    caption: "",
     key: "4",
   },
 ];
@@ -34,7 +31,7 @@ const items = [
 function Home() {
   return (
     <div>
-      <UncontrolledCarousel items={items} className="d-block w-100" className={styles.image} />
+      <UncontrolledCarousel items={items} className={styles.image} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Equipment.module.css";
 import img from "../../../public/Equipment.webp";
 import { makeStyles } from "@material-ui/core/styles";
@@ -20,11 +21,14 @@ export default function Equipment() {
         Equipment
       </h2>
       <br />
-      <div>
-        <img src={img} alt="" className={styles.img} />
+      <div className={styles.img}>
+        <Image src={img} alt="Equipment"  
+      layout="responsive"
+      width={700}
+      height={475} />
       </div>
       <br />
-      <div className={classes.root}>
+      <div className={classes.root} style={{paddingTop: "40px"}}>
         <Grid container spacing={3}>
           <Grid item xs={6} sm={3}>
             <h5>Mikrofone</h5>

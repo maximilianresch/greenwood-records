@@ -15,11 +15,15 @@ export default function Contact() {
       <div className={styles.contactSection}>
         <div>
           <Card className={styles.aboutMeCard}>
-            <CardMedia
-              className={styles.media}
-              image={img}
-              title="Fabian Hainzl"
-            ></CardMedia>
+            <CardMedia className={styles.media}>
+              <Image
+                src={img}
+                layout="responsive"
+                width={290}
+                height={280}
+                alt="Fabian Hainzl"
+              />
+            </CardMedia>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 Fabian Hainzl

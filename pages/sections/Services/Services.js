@@ -9,6 +9,7 @@ import Tilt from "react-tilt";
 import { Card, CardTitle, CardText, Row, Col } from "reactstrap";
 import img from "../../../public/RegieMischpult.webp";
 import Divider from '@material-ui/core/Divider';
+import Image from 'next/image'
 
 export default function Services() {
   return (
@@ -17,7 +18,10 @@ export default function Services() {
 
       <br />
 
-      <img src={img} alt="" className={styles.img} />
+      <Image src={img} alt="" className={styles.img} 
+      layout="responsive"
+      width={700}
+      height={475} />
 
       <Row className={styles.card}>
         <Col sm="6">

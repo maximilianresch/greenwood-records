@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   Card,
   CardImg,
@@ -10,9 +11,9 @@ import {
 } from "reactstrap";
 import Divider from "@material-ui/core/Divider";
 import styles from "./Studio.module.css";
-import img from '../../../public/Slider/Aufnahmeraum1dark.webp';
-import img1 from '../../../public/Slider/Regie.webp';
-import img2 from '../../../public/Aufnahmeraum2.webp';
+import img from "../../../public/Slider/Aufnahmeraum1dark.webp";
+import img1 from "../../../public/Slider/Regie.webp";
+import img2 from "../../../public/Aufnahmeraum2.webp";
 
 // add (studio) img and make cards overlap it
 
@@ -40,11 +41,11 @@ export default function Studio() {
       <div className={styles.cards}>
         <CardDeck>
           <Card className={styles.card}>
-            <CardImg
+            <Image
               className={styles.img}
-              top
-              width="100%"
-              height="auto"
+              layout="responsive"
+              width={300}
+              height={270}
               src={img}
               alt="Aufnahmeraum 1"
             />
@@ -57,18 +58,17 @@ export default function Studio() {
               <CardText>
                 Die lebhafte Akustik verleiht jeder Aufnahme einen natürlichen
                 Klangcharakter. Es wurde in der Planung besonderes Augenmerk auf
-                die Raumhöhe und das Volumen gelegt. Der Raum ist unter
-                anderem perfekt geeignet für Bandaufnahmen mit mittelgroßer
-                Besetzung.
+                die Raumhöhe und das Volumen gelegt. Der Raum ist unter anderem
+                perfekt geeignet für Bandaufnahmen mit mittelgroßer Besetzung.
               </CardText>
             </CardBody>
           </Card>
-          <Card className={styles.card} >
-            <CardImg
+          <Card className={styles.card}>
+            <Image
               className={styles.img}
-              top
-              width="auto"
-              height="375px"
+              layout="responsive"
+              width={280}
+              height={290}
               src={img2}
               alt="Aufnahmeraum 2"
             />
@@ -86,10 +86,11 @@ export default function Studio() {
             </CardBody>
           </Card>
           <Card className={styles.card}>
-            <CardImg
+            <Image
               className={styles.img}
-              top
-              width="100%"
+              layout="responsive"
+              width={300}
+              height={270}
               src={img1}
               alt="Regie"
             />

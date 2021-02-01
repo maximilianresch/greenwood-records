@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import img from "../../public/presseFoto.webp";
+import Image from "next/image";
 
 const useStyles = makeStyles({
   root: {
@@ -21,13 +22,9 @@ export default function PressArticle() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="auto"
-          image={img}
-          title="Contemplative Reptile"
-        />
+        <CardMedia>
+          <Image src={img} layout="responsive" width={300} height={270} alt="PresseArtikel"/>
+        </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             meinbezirk.at
