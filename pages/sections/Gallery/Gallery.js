@@ -3,12 +3,12 @@ import styles from "./Gallery.module.css";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import img from '../../../public/Gallery/couch.jpg'
-import img1 from '../../../public/Gallery/Flügel.jpg'
-import img3 from '../../../public/Gallery/GalerieFoto1.jpg'
-import img4 from '../../../public/Gallery/Serverraum.jpg'
-import img5 from '../../../public/Gallery/GalerieFoto2.jpg'
+import Modal from '@material-ui/core/Modal';
+import img from '../../../public/Gallery/couch.webp'
+import img1 from '../../../public/Gallery/Flügel.webp'
+import img3 from '../../../public/Gallery/GalerieFoto1.webp'
+import img4 from '../../../public/Gallery/Serverraum.webp'
+import img5 from '../../../public/Gallery/GalerieFoto2.webp'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -75,9 +75,6 @@ export default function Gallery() {
           {tileData.map((tile) => (
             <GridListTile key={tile.img} cols={tile.cols || 1}>
               <img src={tile.img} alt={tile.title} id="myImg" /> 
-              <GridListTileBar
-              title={tile.title}
-              titlePosition="bottom" />
             </GridListTile>
           ))}
         </GridList>
