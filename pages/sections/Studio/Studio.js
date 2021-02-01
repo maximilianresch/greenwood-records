@@ -11,9 +11,9 @@ import {
 } from "reactstrap";
 import Divider from "@material-ui/core/Divider";
 import styles from "./Studio.module.css";
-import img from "../../../public/Slider/Aufnahmeraum1dark.webp";
-import img1 from "../../../public/Slider/Regie.webp";
-import img2 from "../../../public/Aufnahmeraum2.webp";
+import img from "../../../public/Slider/Aufnahmeraum1dark.jpg";
+import img1 from "../../../public/Slider/Regie.jpg";
+import img2 from "../../../public/Aufnahmeraum2.jpg";
 
 // add (studio) img and make cards overlap it
 

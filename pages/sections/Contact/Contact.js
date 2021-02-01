@@ -6,7 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import styles from "./Contact.module.css";
 import PressArticle from "../../../components/PressArticle";
-import img from "../../../public/ContactImage.webp"
+import img from "../../../public/ContactImage.jpg"
 
 export default function Contact() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Equipment.module.css";
-import img from "../../../public/Equipment.webp";
+import img from "../../../public/Equipment.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 

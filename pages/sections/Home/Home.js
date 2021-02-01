@@ -1,9 +1,9 @@
 import React from "react";
 import { UncontrolledCarousel } from "reactstrap";
 import styles from './Home.module.css';
-import img from "../../../public/Slider/Regie.webp";
-import img1 from "../../../public/Slider/Aufnahmeraum1.webp";
-import img2 from "../../../public/Slider/Aufnahmeraum1dark.webp";
+import img from "../../../public/Slider/Regie.jpg";
+import img1 from "../../../public/Slider/Aufnahmeraum1.jpg";
+import img2 from "../../../public/Slider/Aufnahmeraum1dark.jpg";
 
 
 const items = [
