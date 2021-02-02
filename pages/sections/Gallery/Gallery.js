@@ -3,11 +3,11 @@ import styles from "./Gallery.module.css";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
-import img from "../../../public/Gallery/couch.jpg";
-import img1 from "../../../public/Gallery/Flügel.jpg";
-import img3 from "../../../public/Gallery/GalerieFoto1.jpg";
-import img4 from "../../../public/Gallery/Serverraum.jpg";
-import img5 from "../../../public/Gallery/GalerieFoto2.jpg";
+import img from "../../../public/Gallery/couch-min.jpg";
+import img1 from "../../../public/Gallery/Flügel-min.jpg";
+import img3 from "../../../public/Gallery/GalerieFoto1-min.jpg";
+import img4 from "../../../public/Gallery/Serverraum-min.jpg";
+import img5 from "../../../public/Gallery/GalerieFoto2-min.jpg";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({

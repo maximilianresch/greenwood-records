@@ -37,10 +37,8 @@ const menuLinks = [
   },
 ];
 
-// very important -> highlight current section
-
 export default function Navigation() {
-  const { isDesktop } = useResponsive();
+  const { isDesktop, windowDimension } = useResponsive();
   const [open, setOpen] = React.useState(false);
 
   return (

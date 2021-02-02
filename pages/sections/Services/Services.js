@@ -7,7 +7,7 @@ import Tilt from "react-tilt";
 // import Button from "@material-ui/core/Button";
 // import Typography from "@material-ui/core/Typography";
 import { Card, CardTitle, CardText, Row, Col } from "reactstrap";
-import img from "../../../public/RegieMischpult.jpg";
+import img from "../../../public/RegieMischpult-min.jpg";
 import Divider from '@material-ui/core/Divider';
 import Image from 'next/image'
 
