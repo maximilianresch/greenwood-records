@@ -67,8 +67,8 @@ export default function Studio() {
             <Image
               className={styles.img}
               layout="responsive"
-              width={280}
-              height={290}
+              width={260}
+              height={320}
               src={img2}
               alt="Aufnahmeraum 2"
             />
