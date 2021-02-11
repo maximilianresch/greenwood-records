@@ -64,16 +64,9 @@ export default function Contact() {
       </div>
       <div>
         <h3 style={{ textAlign: "center", paddingTop: "50px", fontSize: "38px" }}>Medien</h3>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "40px",
-          }}
-        >
+        
           <PressArticle />
         </div>
       </div>
-    </div>
   );
 }
