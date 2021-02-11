@@ -8,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import img from "../public/presseFoto-min.jpg";
+import Image from "next/image";
 
 const useStyles = makeStyles({
   root: {
@@ -19,14 +20,11 @@ export default function PressArticle() {
   const classes = useStyles();
 
   return (
-    <div>
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia component="img"
-          alt="Presse Artikel von mein Bezirk (meinbezirk.at) mit Fabian Hainzl"
-          height="280"
-          image={img} />
-         
+        <CardMedia>
+          <Image src={img} layout="responsive" width={300} height={270} alt="Foto vom Presse Artikel (meinbezirk.at)"/>
+        </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3">
             meinbezirk.at
@@ -47,6 +45,5 @@ export default function PressArticle() {
         </Button>
       </CardActions>
     </Card>
-    </div>
   );
 }
