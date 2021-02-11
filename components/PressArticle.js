@@ -13,7 +13,6 @@ import Image from "next/image";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    position: "unset"
   },
 });
 
