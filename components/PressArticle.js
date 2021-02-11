@@ -19,6 +19,7 @@ export default function PressArticle() {
   const classes = useStyles();
 
   return (
+    <div>
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia component="img"
@@ -46,5 +47,6 @@ export default function PressArticle() {
         </Button>
       </CardActions>
     </Card>
+    </div>
   );
 }
