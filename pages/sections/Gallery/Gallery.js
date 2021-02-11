@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Gallery.module.css";
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
@@ -8,75 +7,81 @@ import img1 from "../../../public/Gallery/Flügel-min.jpg";
 import img3 from "../../../public/Gallery/GalerieFoto1-min.jpg";
 import img4 from "../../../public/Gallery/Serverraum-min.jpg";
 import img5 from "../../../public/Gallery/GalerieFoto2-min.jpg";
-import Image from "next/image";
+import useResponsive from '../../../helper/useResponsive';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    paddingTop: 50,
-    paddingBottom: 50,
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+    paddingTop: "50px",
+    paddingBottom: "40px",
+    backgroundColor: "inherit"
   },
   gridList: {
-    width: 900,
-    height: "auto",
+    flexWrap: 'nowrap',
+    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+    transform: 'translateZ(0)',
   },
 }));
-
 const tileData = [
   {
     img: img,
-    title: "Couch",
-    cols: 1,
+    alt: "Couch im Studio",
   },
   {
     img: img1,
-    title: "Flügel",
-    cols: 2,
+    alt: "Foto von Flügel im Aufnahmeraum 1",
   },
   {
     img: img3,
-    title: "Galerie",
-    cols: 1,
+    alt: "Galeriefoto",
   },
   {
     img: img4,
-    title: "placeholder",
-    cols: 1,
+    alt: "Foto vom PC im Rack bezieungsweise vom Serveraum",
   },
   {
     img: img5,
-    title: "placeholder",
-    cols: 1,
+    alt: "Galeriefoto",
   },
 ];
 
 // maybe add onHover to see the title
 
 export default function Gallery() {
+  const {isDesktop} = useResponsive();
   const classes = useStyles();
 
   return (
-    <div id="myModal" id="gallery">
-      <h2> Galerie</h2>
-      <div className={classes.root}>
-        <GridList cellHeight={160} className={classes.gridList} cols={3}>
-          {tileData.map((tile) => (
-            <GridListTile key={tile.img} cols={tile.cols || 1}>
-          
-              <Image
-                src={tile.img}
-                alt={tile.title}
-                id="myImg"
-                layout="fill"
-                objectFit="cover"
-              />
-            </GridListTile>
-          ))}
-        </GridList>
-      </div>
+    <div id="gallery" >
+    <h2>Galerie</h2>
+    {isDesktop ? 
+    (<div className={classes.root} >
+    
+    <GridList cellHeight={350} className={classes.gridList} cols={3} >
+      {tileData.map((tile) => (
+        <GridListTile key={tile.img}>
+          <img src={tile.img} alt={tile.alt} />
+        </GridListTile>
+      ))}
+    </GridList>
+  </div>
+  ) : (
+    <div className={classes.root} >
+    
+      <GridList cellHeight={350} className={classes.gridList} cols={1} >
+        {tileData.map((tile) => (
+          <GridListTile key={tile.img}>
+            <img src={tile.img} alt={tile.alt} />
+          </GridListTile>
+        ))}
+      </GridList>
+    </div>
+  )}
+    
     </div>
   );
 }

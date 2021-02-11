@@ -22,9 +22,11 @@ export default function PressArticle() {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia>
-          <Image src={img} layout="responsive" width={300} height={270} alt="PresseArtikel"/>
-        </CardMedia>
+        <CardMedia component="img"
+          alt="Presse Artikel von mein Bezirk (meinbezirk.at) mit Fabian Hainzl"
+          height="280"
+          image={img} />
+         
         <CardContent>
           <Typography gutterBottom variant="h5" component="h3">
             meinbezirk.at

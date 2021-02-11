@@ -21,7 +21,7 @@ export default function Contact() {
                   layout="responsive"
                   width={290}
                   height={280}
-                  alt="Fabian Hainzl"
+                  alt="Foto von Fabian Hainzl"
                 />
             </CardMedia>
             <CardContent>

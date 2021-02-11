@@ -21,6 +21,8 @@ export default function App() {
     <div>
       <Head>
         <title>greenwoodrecords - Tonstudio</title>
+        <meta name="title" content="greenwoodrecords - Tonstudio" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta
           name="viewport"
           content="initial-scale=1, width=device-width"
@@ -28,8 +30,14 @@ export default function App() {
         />
         <meta
           name="description"
-          content="Tonstudio - Musikproduktion. Greenwoodrecords ist der perfekte Standort für ihre Aufnahmen. Wir freuen uns über jedes Genre, egal ob Pop, Klassik, Jazz, Rock."
+          content="Tonstudio - Musikproduktion. Greenwoodrecords ist der perfekte Standort in Niederösterreich für ihre Aufnahmen. Wir freuen uns über jedes Genre, egal ob Pop, Klassik, Jazz, Rock. Die lebhafte Akustik verleiht jeder Aufnahme einen natürlichen Klangcharakter. Es wurde in der Planung besonderes Augenmerk auf die Raumhöhe und das Volumen gelegt. Die Aufnahmeräume ist unter anderem perfekt geeignet für Bandaufnahmen mit mittelgroßer Besetzung. -Fabian Hainzl"
         />
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:site_name" content="greenwoodrecords.at" />
+        <meta property="og:title" content="greenwoodrecords - Tonstudio" />
+        <meta property="og:url" content="https://greenwoodrecords.at/"></meta>
+<meta property="og:description" content="Tonstudio - Musikproduktion. Greenwoodrecords ist der perfekte Standort für ihre Aufnahmen. Wir freuen uns über jedes Genre, egal ob Pop, Klassik, Jazz, Rock." />
+
       </Head>
       <Home />
       <div className={styles.content}>

@@ -22,7 +22,7 @@ export default function Equipment() {
       </h2>
       <br />
       <div className={styles.img}>
-        <Image src={img} alt="Equipment"  
+        <Image src={img} alt="Foto vom Equipment und Rack"  
       layout="responsive"
       width={700}
       height={475} />

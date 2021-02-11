@@ -18,7 +18,7 @@ export default function Services() {
 
       <br />
 
-      <Image src={img} alt="" className={styles.img} 
+      <Image src={img} alt="großes Foto vom Mischpult in der Regie" className={styles.img} 
       layout="responsive"
       width={700}
       height={475} />
