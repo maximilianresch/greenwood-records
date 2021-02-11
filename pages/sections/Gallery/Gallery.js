@@ -56,10 +56,10 @@ export default function Gallery() {
   return (
     <div id="gallery" >
     <h2>Galerie</h2>
-    {isDesktop ? 
+    {isDesktop && 
     (<div className={classes.root} >
     
-    <GridList cellHeight={350} className={classes.gridList} cols={3} >
+    <GridList cellHeight={350} className={classes.gridList} cols={2.1} >
       {tileData.map((tile) => (
         <GridListTile key={tile.img}>
           <img src={tile.img} alt={tile.alt} />
@@ -67,10 +67,10 @@ export default function Gallery() {
       ))}
     </GridList>
   </div>
-  ) : (
+  )} {!isDesktop && (
     <div className={classes.root} >
     
-      <GridList cellHeight={350} className={classes.gridList} cols={1} >
+      <GridList cellHeight={350} className={classes.gridList} cols={1.2} >
         {tileData.map((tile) => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.alt} />
